@@ -1590,7 +1590,7 @@ async function getStats(id) {
 }
 
 function showZoneInfo() {
-    let id = document.getElementById('zoneId').textContent;
+    let id = Number(document.getElementById('zoneId').textContent);
     document.getElementById('popupTitle').textContent = "Info";
     const popupBody = document.getElementById('popupBody');
     popupBody.innerHTML = `<p>Loading...</p>`
